@@ -20,6 +20,7 @@ p{font-family: 'Poppins', sans-serif;
   line-height: 1.7em;
   color: #999;
 }
+
 a
 {
   
@@ -106,32 +107,27 @@ ul ul a {
     padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
-    background: #eff2ff;
+
 }
 
-@media(max-width:768px){
-  #sidebar{margin-left: -200px;}
-  #sidebar.active{
-    margin-left: 0px;
-  }
-  #sidebarCollapse span{
-    display: none;
-  }
-}
+
 
 
 /*---------------content ------------*/
 .maincontent
 {
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
-background-color: white;
 }
 .maincontentbox
 {
 padding: 0;
 margin: 0;
 }
-
+.jobform{
+  -webkit-box-shadow: -1px 4px 21px 7px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 4px 21px 7px rgba(0,0,0,0.75);
+  box-shadow: -1px 4px 21px 7px rgba(0,0,0,0.75);
+  padding: 30px 40px;}
 
 
 
