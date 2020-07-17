@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/stylesa.css">
+   
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<title>
+		dashboard
+	</title>
+</head>
+<body>
+<nav class="navbar nav2 sticky-top navbar-expand-lg navbar-light bg-light ">
+  <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Logo"/></a>
+  <button type="button" id="sidebarCollapse" class="btn btn-info">
+	<i class="fa fa-align-justify"></i>
+   		</button>
+</nav>
+<div id="wrapper">
+   	<nav id="sidebar">
+   		<ul class="sidebar_menu list-unstyled components">
+   			<p>Sonai Dashboard</p>
+   			<li>
+			<a class="" href="#">Job</a>
+   			</li>
+   			<li>
+   			<a class="" href="#">Candidate</a>
+   			</li>
+   			<li>
+   			<a href="#">Interviews</a>
+   			</li>
+   			<li>
+   			<a href="#">offer</a>
+   			</li>
+   		</ul>
+ 
+   	</nav>
+   <div class="content">
+   	<div class="row maincontentbox">
+		<div class="col-lg-2">
+
+		</div>
+		<div class="col-lg-8 bg">
+			<form class="jobform">
+				<div class="formelement form-group">
+				  <label for="clientname" class="Job_label col-form-label">Client Name:</label>
+					<input type="text" class="form-control" id="clientName" placeholder="Client">
+				</div>
+				<div class="formelement form-group ">
+					<label for="duration" class="Job_label  col-form-label">Duration:</label>
+					  <input type="number" class="form-control" id="duration" placeholder="enter months">
+				</div>
+				<div class="formelement form-group">
+					<label for="rates" class="Job_label col-form-label">Rates:</label>
+					  <input type="number" class="form-control" id="clientName" placeholder="Rates">
+				</div>
+				<div class="formelement form-group">
+				  <label for="jobtitle" class="Job_label  col-form-label">Job Title:</label>
+					<input type="text" class="form-control" id="jobtitle" placeholder="enter job">
+				</div>
+				<div class="formelement form-group ">
+					<label for="Location" class="Job_label col-form-label">Location:</label>
+				   
+						<select class="form-control " id="location">
+							<option>noida</option>
+							<option>ghaziabad</option>
+							<option>Delhi</option>
+							<option>Punjab</option>
+						  </select>
+				</div>
+				<div class="formelement form-group">
+					<label for="jobDescription" class="col-form-label">Job Descrition</label>
+					  <textarea class="form-control" rows="3" id="jobdescription" placeholder="enter job description"></textarea>
+				</div>
+				<div class="formelement form-group">
+					<div class="text-center">
+					  <button type="submit" class="btn btn-default justify-center" >Upload</button>
+					</div>
+				  </div>
+				</form>
+		</div>
+		<div class="col-lg-2">
+
+		</div>
+   	</div>	
+  	
+  </div>
+</div>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <script>
+	    $(document).ready(function(){
+			$('#sidebarCollapse').on('click',function(){
+				$('#sidebar').toggleClass('active');
+			});
+		});
+		 
+	</script>
+</body>
+</html>
