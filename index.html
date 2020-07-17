@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    
+    <title>Sonai Dashboard</title>
+
+</head>
+<body>
+    <nav class="navbar nav sticky-top navbar-expand-lg navbar-light bg-light ">
+        <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Logo"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto justify-content-between sticky-top ">
+            <li class="nav-item ">
+                <a class="nav-link" href="#job">Job</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#candidate">Candidate</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Interviews</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Offer</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <!---Job Content-->
+
+
+        <div class="container-fluid jobbg" id="job">
+            <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-12"></div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+            <h1 class="jobheading">Job</h1>
+          <form class="jobform">
+            <div class="formelement form-group">
+              <label for="clientname" class="Job_label col-form-label">Client Name:</label>
+                <input type="text" class="form-control" id="clientName" placeholder="Client">
+            </div>
+            <div class="formelement form-group ">
+                <label for="duration" class="Job_label  col-form-label">Duration:</label>
+                  <input type="number" class="form-control" id="duration" placeholder="enter months">
+            </div>
+            <div class="formelement form-group">
+                <label for="rates" class="Job_label col-form-label">Rates:</label>
+                  <input type="number" class="form-control" id="clientName" placeholder="Rates">
+            </div>
+            <div class="formelement form-group">
+              <label for="jobtitle" class="Job_label  col-form-label">Job Title:</label>
+                <input type="text" class="form-control" id="jobtitle" placeholder="enter job">
+            </div>
+            <div class="formelement form-group ">
+                <label for="Location" class="Job_label col-form-label">Location:</label>
+               
+                    <select class="form-control " id="location">
+                        <option>noida</option>
+                        <option>ghaziabad</option>
+                        <option>Delhi</option>
+                        <option>Punjab</option>
+                      </select>
+            </div>
+            <div class="formelement form-group">
+                <label for="jobDescription" class="col-form-label">Job Descrition</label>
+                  <textarea class="form-control" rows="3" id="jobdescription" placeholder="enter job description"></textarea>
+            </div>
+            <div class="formelement form-group">
+                <div class="text-center">
+                  <button type="submit" class="btn btn-success justify-center" >Upload</button>
+                </div>
+              </div>
+            </form>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12"></div>
+            </div>
+        </div>
+
+        <!------Candidate List-->
+      
+        <div class="container-fluid candidatebg">
+            <div class="row">
+                <div class="col-md-2 col-sm-2 col-xs-12"></div>
+                <div class="col-md-8 col-sm-8 col-xs-12">
+                    <h1 class="candidateheading">List of candidate</h1>
+                    <table class="table table-hover table-striped clientdatatable">
+                        <thead>
+                          <tr>
+                            <th scope="col">Candidate Contacted</th>
+                            <th scope="col">Candidate Reported</th>
+                            <th scope="col">% fit candidate</th>
+                            <th scope="col">Time taken to finding right candidate</th>
+                            <th scope="col">Tectical skill analytics</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-12"></div>
+            </div>
+        </div>
+
+        <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <!---data tabls js-->
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>   
+    <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+    <script>
+        $('.clientdatatable').DataTable(
+            {
+                ordering: false,
+                lengthMenu:[5,7,10]
+            }
+        );
+    </script>
+</body>
+</html>
